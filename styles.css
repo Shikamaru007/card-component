@@ -4,3 +4,127 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+}
+body p{
+    font-family: Montserrat, sans-serif;
+    color: rgba(56, 62, 60, 0.7);
+    line-height: 1.6;
+    font-weight: 500;
+
+}
+.tag{
+    font-family: Montserrat, sans-serif;
+    color: rgba(56, 62, 60, 0.7);
+    letter-spacing: 5px;
+    
+}
+button{
+    color: white;
+    background-color: rgb(60, 128, 103);
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(60, 128, 103, 0.8);
+}
+button:active{
+    background-color: rgb(6, 73, 49);
+}
+h1{
+    color: rgb(49, 60, 55);
+    font-family: Fraunces, serif;
+    line-height: 1.1;
+    font-size: 2rem;
+
+}
+.price {    
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.main-price {
+    font-family: Fraunces, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(60, 128, 103);
+}
+.old-price {
+    font-size: .8em;
+    font-family: Montserrat, sans-serif;
+    text-decoration: line-through;
+    color: rgba(56, 62, 60, 0.7);
+}
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 235, 227);
+}
+.container {
+    max-width: 650px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 48% 1fr;
+    border-radius: 10px;
+}.image {
+    display: flex;
+    border-radius: 10px 0 0 10px;
+}
+#mobile-pic{
+    display: none;
+}
+.image img {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 10px 10px 0;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:622px){
+    .container {
+        grid-template-columns: 1fr;
+        border: 1px solid;
+    }
+    .image img{
+        display: none;        
+    }
+    section {
+        padding: 2rem 1.5rem;
+    }
+    #mobile-pic{
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .content {
+        border-radius: 0 0 10px 10px;
+        padding: 2rem;
+    }
+    h1 {
+        margin:1.5rem 0;
+    }
+    .price {
+        margin: 1.5rem 0;
+    }
+  
+}
+
